@@ -35,7 +35,7 @@ def extract_features(img_path,model):
 filenames = []
 
 for file in os.listdir('images'):
-    filenames.append(os.path.join('images', file))
+    filenames.append(os.path.join('images', file).replace("\\","/"))
 
 
 
